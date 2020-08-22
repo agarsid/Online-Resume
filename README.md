@@ -1,4 +1,4 @@
 # Online-Resume
-A simple website using Python and Flask portraying basic details of my resume.
+A simple portfolio website based on Flask using custom HTML & CSS
 
 Demo: http://agarsid25.herokuapp.com/
