@@ -1,316 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Siddharth Agarwal</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header>
-            <div class="navbar">
-                <a href="#">Home</a>  
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </header>
-    <div class="container">
 
-      <!-- HEADER -->
-      <div class="jumbotron">
-        <div class="jumbotron-text">
-          <h1>Siddharth Agarwal</h1>
-          <p>Computer Science Sophomore at the University of Hong Kong</p>
-        </div>
-        <div class="jumbotron-social">
-          <ul class="ul-social">
-            <li class="li-social-links">
-              <a class="social" href="https://github.com/agarsid" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li class="li-social-links">
-              <a class="social" href="https://www.linkedin.com/in/siddharth-agarwal-/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div id="down-arrow">
-          <span><a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></span>
-        </div>
+<head>
+
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <meta charset="utf-8">
+  <title>Siddharth Agarwal</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="true">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navigation_bar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <!-- <a href="#more">More</a> -->
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+  <div class="contain">
+
+    <!-- HEADER -->
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <h1 class='load-hidden'>Siddharth Agarwal</h1>
+        <p id="intro"></p>
+        <p id='intro_2' class='black-text'></p>
+        <br />
       </div>
-      <!-- END HEADER -->
-
-
-
-      <!-- BEGIN ABOUT -->
-      <div class="row white box-shadow">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="about"></a>
-            <h2>About</h2>
-          </div>
-          <div class="content-body">
-            <p>I am a sophomore at the University of Hong Kong pursuing Computer Science with a minor in Science Entrepreneurship.</p>
-            <p>Ever since high school, I was extremely passionate about debating which I believe developed my interest in computer science since both of these involve logical and problem solving skills.
-               This interest compelled me to implement and enhance my skills in the field by working as a Software Development intern and a technical research intern. Through both of these internships I gained the courage to contribute in a professional environment alongwith understanding the importance of collaboration.
-               I have also worked on various self-initiated projects using the MERN stack to increase my knowledge. 
-               Furthermore, balancing multiple projects in the University along with my professional duties has led to the development of a time-efficient work ethic and the ability to work under high-pressure situations.
-             </p>
-                
-             <p>My career interests are not just restricted towards computer science.
-                I am capable in software development and data analytics but would like to further enhance my skills in the field of finance. 
-                I like working at the intersection of finance and technology and am thus particularly interested in Fintech solutions.
-                
-             </p>
-            
-          </div>
-        </div>
-        <div class="side-content"></div>
+      <div class="jumbotron-social">
+        <ul class="ul-social">
+          <li class="li-social-links">
+            <a class="social" href="https://github.com/agarsid" target="_blank"><i class="fa fa-github"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="li-social-links">
+            <a class="social" href="https://www.linkedin.com/in/siddharth-agarwal-/" target="_blank"><i
+                class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+        </ul>
       </div>
-      <!-- END ABOUT -->
+      <a async href="{{url_for('static', filename='Resume_Agarwal Siddharth.pdf')}}" target='_blank' class='resume'>View
+        Resume</a>
 
-      <!-- BEGIN EXPERIENCE -->
-      <div class="row">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="experience"></a>
-            <h2>Experience</h2>
-          </div>
-          <!-- CARD #1 -->
-          <div class="content-body">
-            <div class="card">
-              <div class="card-header">
-                <h4><em>SleekFlow by Travis:</em>&nbsp; Software Development Intern <span class="job-title">September 2019 - February 2020</span></h4>
-              </div>
-              <div class="card-content">
-                <p>Worked in a team of three to integrate the Line Business API into the already existing instant messaging platform model of SleekFlow using ASP.Net Core Model-View-Controller Framework and C#. <br>
-                    Created a Widget-Generator Responsive Webiste using ReactJs. 
-                    Updating database models and using Entity Framework (EF) Core so as to interact with the database.</p>
-              </div>
-            </div>
-
-            <!-- CARD #2 -->
-
-            <div class="card">
-                <div class="card-header">
-                  <h4> <em>University of Hong Kong: </em>&nbsp; Teaching Assistant <span class="job-title">September 2019 - Present</span></h4>
-                </div>
-                <div class="card-content">
-                  <p>Mentoring students and handling their queries in the course ENGG 1330 (Introduction to Python) and COMP 1117 (Python and its Applications).</br>
-                     Conducting tutorials and solving problems on a weekly basis in a class of 60 students.</p>
-                </div>
-              </div>
-
-
-          <!-- CARD #3 -->              
-            <div class="card">
-              <div class="card-header">
-                <h4> <em>PROGILENCE: </em>&nbsp; Technical Research Intern <span class="job-title">June 2018 - August 2018</span></h4>
-              </div>
-              <div class="card-content">
-                <p>Assisted the team leader to create a people-counting system by implementing deep learning using python and TensorFlow
-                    object detection API.
-                    Created custom dataset, annotated the images by using tools like LabelImg and assisted in training the dataset.
-                    </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="side-content"></div>
+      <div id="down-arrow">
+        <span><a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></span>
       </div>
-
-      <!-- END EXPERIENCE -->
-
-      <!-- BEGIN EDUCATION -->
-      <div class="row white box-shadow">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="education"></a>
-            <h2>Education</h2>
-          </div>
-          <div class="content-body">
-
-            <!-- EDUCATION 1 -->
-            <div class="card">
-              <div class="card-header">
-                <h4>The University of Hong Kong <span class="job-title">September 2018 - May 2020</span></h4>
-              </div>
-              <div class="card-content">
-                <ul> 
-                  <li>Minor: Science Entrepreneurship</li>
-                <li> CGPA: 3.86/4.3 (First Class Honours)</li>
-                <li>Honours: Dean’s Honours List; HKU Foundation Scholarship (2018-2022)</li>
-                <li>Relevant Coursework: Data Structures and Algorithms; Discrete Mathematics; Object Oriented Programming and Java;
-                    Computer Organisation; Introduction to Python; Introduction to Linux and C++; Probability and Statistics</li>
-                <li> Activites: HKU Student Ambassador English Debating Team: Member; 
-                        Hall Table Tennis Team: Member</li>
-                    
-                  
-                </ul>
-              </div>
-            </div>
-            <!-- EDUCATION 2 -->
-            <div class="card">
-              <div class="card-header">
-                <h4>St. Joseph's Academy <span class="job-title">April 2005 - May 2018</span></h4>
-              </div>
-              <div class="card-content">
-                  <ul> 
-                    <li>Subjects: Computer Science; Mathematics; English; Physics; Chemistry</li>
-                    <li> Grade: 96.5% (First Class Honours)</li>
-                    <li>Honours: School Topper (Grade 10; Grade 12)</li>
-                    <li> Activites: School Council: House Captain; English Debating Team: Vice President; English Dramatics Club: Member;
-                       Table Tennis Team: Member; Lawn Tennis Team: Member</li>
-                        
-                      
-                    </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="side-content"></div>
-      </div>
-      <!-- END EDUCATION -->
-
-      <!-- BEGIN PROJECTS -->
-      <div class="row">
-        <div class="side-content-sm"></div>
-        <div class="main-content-lg">
-          <div class="content-header">
-            <a class="anchor" name="projects"></a>
-            <h2>Projects</h2>
-          </div>
-          <div class="content-body">
-            <!-- CARD #1 -->
-            <div class="project-card">
-              <div class="project-image">
-                <!-- <img src="https://drive.google.com/file/d/1s8FXh4cNZNqZPz-Mm4Ov0w4OEWsgUBwW/view?usp=sharing"> -->
-              </div>
-              <div class="project-content">
-                <h3>Prosper.ai</h3>
-                <p> This is part of my application for the Cyberport University Partnership Programme.</br>
-                    The proposed idea is to build an artificial intelligence based POS(Point of Sale) integrated ERP (Enterprise </br>
-                    Resource Planning) system for small-scale vendors of the unorganised sector. We aim to digitise their </br>
-                    inventory management system using Image Recognition Software. Moreover, our machine learning model makes use</br>
-                    of the vendor's target profit to provide dynamic pricing recommendations.</br>
-                </br>Currently, my primary role as the CTO to develop the image recognition algorithm along with creating the web</br> and mobile application.</p>
-                <a href="https://drive.google.com/file/d/1l3yW7pSDkBcfLtVG_FesRTjgSONqNPun/view?usp=sharing">Sample</a>
-              </div>
-            </div>
-            <!-- CARD #2 -->
-            <div class="project-card">
-              <div class="project-image">
-                <!-- <img src="/Users/sid/Downloads/site/app/images/Mern.png"> -->
-              </div>
-              <div class="project-content">
-                <h3>Trading Application</h3>
-                <p>A dummy trading web application based on the US stock market</p>
-                <ul>
-                  <li>A MERN stack implementation. Used Restful API to enable fast communication between the client and the server.</li>
-                  <li>Used Plotly.js for graphing the stock information of a 100 day period</li>
-                  <li>Used AlphaVantage Stock API for accessisng US stock market.</li>
-                </ul>
-                <a href="https://github.com/agarsid/Trading-Application">GitHub Link</a>
-              </div>
-            </div>
-            <!-- CARD #3 -->
-            <div class="project-card">
-              <!-- <div class="project-image">
-                <img src="../images/Picture.png" alt="sa">
-              </div> -->
-              <div class="project-content">
-                <h3>Tic-Tac-Toe</h3>
-                <p>A GUI and network facilitated Tic-Tac-Toe Game in Java.</p>
-                <ul>
-                  <li>Used Object Oriented Programming alongwith formatting the code based on the Model-View-Controller framework. </li>
-                  <li>Implemented a server-client model and used multi-threading.</li>
-                </ul>
-                <a href="https://github.com/agarsid/Tic-Tac-Toe">GitHub Link</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="side-content-sm"></div>
-      </div>
-      <!-- END PROJECTS -->
-
-      <!-- BEGIN SKILLS -->
-      <div class="row white box-shadow">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="skills"></a>
-            <h2>Skills</h2>
-          </div>
-          <div class="content-body">
-            <ul class="ul-skills">
-              <li class="li-skills">Javascript</li>
-              <li class="li-skills">Java</li>
-              <li class="li-skills">Python</li>
-              <li class="li-skills">React</li>
-              <li class="li-skills">Node.js</li>
-              <li class="li-skills">MongoDB</li>
-              <li class="li-skills">C++</li>
-              <li class="li-skills">HTML</li>
-              <li class="li-skills">CSS</li>
-              <li class="li-skills">Teamwork</li>
-              <li class="li-skills">Leadership</li>
-              <li class="li-skills">Time-Management</li>
-              <li class="li-skills">Communication</li>
-            </ul>
-          </div>
-        </div>
-        <div class="side-content"></div>
-      </div>
-      <!-- END SKILLS -->
-
-      <!-- BEGIN CONTACT -->
-
-      <div class="row blue">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="contact"></a>
-            <h2 class="white-text">Contact Me</h2>
-          </div>
-          <div class="contact content-body">
-            <p class="white-text">
-              Reach me at agarsid@connect.hku.hk
-            </p>
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-          </div>
-        </div>
-        <div class="side-content"></div>
-      </div>
-      <!-- END CONTACT -->
-
-      <!-- BEGIN FOOTER -->
-      <div class="row">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-          </div>
-          <div class="content-body">
-            <p>Copyright Siddharth Agarwal 2020</p>
-          </div>
-        </div>
-        <div class="side-content"></div>
-      </div>
-      <!-- END FOOTER -->
 
     </div>
-  </body>
+    <!-- END HEADER -->
+
+
+
+    <!-- BEGIN ABOUT -->
+    <div class="row black box-shadow" id='about'>
+
+      <div class="main-content" style="flex: 0 0 100%">
+        <div class="content-header">
+          <h2>About</h2>
+        </div>
+        <div class="content-body" style="display: flex; padding: 0 1% 0 2%; align-items: center">
+          <div>
+            <img class='aboutImg' src="{{url_for('static', filename='images/Photograph.jpg')}}">
+          </div>
+          <div style="padding: 0 2% 0 1%; color: white">
+            <p>I am a junior at the University of Hong Kong pursuing Computer Science with a minor in Science
+              Entrepreneurship.</p>
+            <p>Ever since high school, I was extremely passionate about debating which I believe developed my interest
+              in computer science since both of these involve logical and problem solving skills.
+              This interest compelled me to implement and enhance my skills in the field by working as a Full Stack Engineer, Software
+              Developer and a technical researcher. Through these internships I gained the courage
+              to contribute in a professional environment alongside understanding the importance of collaboration.
+              I have also worked on various self-initiated projects using the MERN stack to increase my knowledge.
+              Furthermore, balancing multiple projects in the University alongwith my professional duties has led to
+              the development of a time-efficient work ethic and the ability to work under high-pressure situations.
+            </p>
+
+            <p>My career interests are not just restricted towards computer science.
+              I am capable in software development and data analytics but would like to further enhance my skills in the
+              field of finance.
+              I like working at the intersection of finance and technology and am thus particularly interested in
+              Fintech solutions.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- BEGIN EDUCATION -->
+    <div class="row box-shadow" id='education'>
+      <div class="main-content">
+        <div class="content-header">
+          <!-- <a class="anchor" name="education"></a> -->
+          <h2 class='load-hidden'>Education</h2>
+        </div>
+        <div class="content-body">
+
+          <!-- EDUCATION 1 -->
+          <div class="card transform-scale-1">
+            <div class="card-header">
+              <h4>The University of Hong Kong <span class="job-title">September 2018 - May 2022</span></h4>
+            </div>
+            <div class='mob' style="display: flex; align-items: center">
+              <div class="project-image">
+                <img src="{{url_for('static', filename='images/hku.png')}}" style="width:unset">
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>Minor: Science Entrepreneurship</li>
+                  <li> CGPA: 3.91/4.3 (First Class Honours)</li>
+                  <li>Honours: Dean’s Honours List; HKU Foundation Scholarship (2018-2022)</li>
+                  <li>Relevant Coursework: Data Structures and Algorithms; Discrete Mathematics; Object Oriented
+                    Programming and Java; Big Data Analytics & Text Mining in Finance; Computer Organisation; 
+                  </li>
+                  <li> Activites: HKU Student Ambassador; English Debating Team: Member;
+                    Hall Table Tennis Team: Member</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EDUCATION 2 -->
+          <div class="card transform-scale-1">
+            <div class="card-header">
+              <h4>St. Joseph's Academy <span class="job-title">April 2005 - May 2018</span></h4>
+            </div>
+            <div class='mob' style="display: flex; align-items: center">
+              <div class="project-image">
+                <img src="{{url_for('static', filename='images/sja.png')}}" style="width:unset">
+              </div>
+              <div class="project-content">
+                <ul>
+                  <li>Subjects: Computer Science; Mathematics; English; Physics; Chemistry</li>
+                  <li> Grade: 96.5% (First Class Honours)</li>
+                  <li>Honours: School Topper (Grade 10; Grade 12)</li>
+                  <li> Activites: School Council: House Captain; English Debating Team: Vice President; English
+                    Dramatics Club: Member;
+                    Table Tennis Team: Member; Lawn Tennis Team: Member</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END EDUCATION -->
+
+    <!-- BEGIN EXPERIENCE -->
+    <div class="row black" id='experience'>
+      <div class="main-content">
+        <div class="content-header">
+          <!-- <a class="anchor" name="experience"></a> -->
+          <h2 class='load-hidden'>Experience</h2>
+        </div>
+        <!-- CARD #1 -->
+        <div class="content-body">
+          <div class="timeline">
+            <div class="timeline__group">
+              <span class="timeline__year">2020</span>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">Curr.</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JUL</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>HKU SLR LAB:</em>&nbsp; Research Volunteer</h4>
+                  </div>
+                  <div class="timeline__content">
+                    <img src="{{url_for('static', filename='images/hku.png')}}">
+                    <p>Developing and designing a responsive interface which will serve as a virtual learning and assessment tool for
+                       children with special education needs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">Curr.</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JUN</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>Freehunter:</em>&nbsp; Full Stack Engineer</h4>
+                  </div>
+                  <div class="timeline__content">
+                      <img src="{{url_for('static', filename='images/freehunter.png')}}">
+                    <p>Working on LAMP (Linux, Apache, MySQL and PHP) stack with WordPress as well as MERN (Mongo,Express,React and
+                      Node) stack for enhancing and developing the backend and frontend infrastructure.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">Curr.</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JUN</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>Prosper.ai:</em>&nbsp; Project Lead</h4>
+                  </div>
+                  <div class="timeline__content">
+                    <img style="width: 100%" src="{{url_for('static', filename='images/dashboard.png')}}">
+                    <p>Creating an application for small-scale vendors which aims to bridge the gap between the unorganised and organised sector<br /> <a
+                      style="text-decoration: none; color: #124e8c" href='#prosper'>View Detail</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">JUL</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JUN</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>MediConCen Limited:</em>&nbsp; Summer Intern</h4>
+                  </div>
+                  <div class="timeline__content">
+                      <img src="{{url_for('static', filename='images/mediconcen.jpg')}}">
+                    <p>Pitched a business expansion report to increase company revenue to HKD 465 million in a 18 month
+                      period</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">MAY</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JAN</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>HKU CS:</em>&nbsp; Teaching Assistant</h4>
+                  </div>
+                  <div class="timeline__content">
+                      <img src="{{url_for('static', filename='images/hku.png')}}">
+                    <p>Organising tutorials and solving queries of 45 students in the course COMP1117 (Python)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">MAR</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">FEB</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>Trading Web Application:</em>&nbsp; Creator</h4>
+                  </div>
+                  <div class="timeline__content">
+                      <img style="width: 100%" src="{{url_for('static', filename='images/trade.png')}}">
+                    <p>Implemented a dummy trading application based on the MERN stack <br /> <a
+                        style="text-decoration: none; color: #124e8c" href='#trade'>View
+                        Detail</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date" style="display: unset; flex-direction: unset">
+                  <span class="timeline__month">FEB</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>SleekFlow by Travis:</em>&nbsp; Software Development Intern</h4>
+                  </div>
+                  <div class="timeline__content">
+                    <img src="{{url_for('static', filename='images/sleek.png')}}">
+                    <p>Worked in a team of three to integrate the Line Business API into the already existing instant
+                      messaging platform model of SleekFlow using ASP.Net Core Model-View-Controller Framework and C#.<br/>
+                      The internship started in September 2019.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__group">
+              <span class="timeline__year">2019</span>
+              <div class="timeline__box">
+                <div class="timeline__date" style="display: unset; flex-direction: unset">
+                  <span class="timeline__month">SEP</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>SleekFlow by Travis:</em>&nbsp; Software Development Intern</h4>
+                  </div>
+                  <div class="timeline__content">
+                    <img src="{{url_for('static', filename='images/sleek.png')}}">
+                    <p>Sleekflow provides an instant messaging channel comprising of different services like WhatsApp and Facebook Messenger
+                      on on single platform for businesses to interact with their customers. Initially tasked with researching the Facebook Graph API
+                      to incorporate its message delivery and read status feature.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline__box">
+                <div class="timeline__date">
+                  <span class="timeline__month">AUG</span>
+                  <span class="timeline__month">-</span>
+                  <span class="timeline__month">JUL</span>
+                </div>
+                <div class="timeline__post">
+                  <div class="card-header">
+                    <h4><em>PROGILENCE:</em>&nbsp; Technical Researcher</h4>
+                  </div>
+                  <div class="timeline__content">
+                      <img style="height: 200px" src="{{url_for('static', filename='images/prog.jpeg')}}">
+                    <p>Assisted the team leader to create a people-counting system by implementing deep learning using
+                      python and TensorFlow object detection API. Created custom dataset, annotated the images by using
+                      tools like LabelImg and assisted in training the dataset.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END EXPERIENCE -->
+
+    <!-- BEGIN PROJECTS -->
+    <div class="row" id='projects'>
+      <div class="main-content">
+        <div class="content-header">
+          <!-- <a class="anchor" name="projects"></a> -->
+          <h2>Selective Projects</h2>
+        </div>
+        <div class="content-body">
+          <!-- CARD #1 -->
+          <div class="project-card" id='prosper'>
+
+            <div class="project-content">
+              <h3>Prosper.ai</h3>
+              <p> This is part of my application for the TENCENT Fintech Competiiton 2020<br/><br/>
+                The proposed idea is to build an artificial intelligence based POS(Point of Sale) integrated ERP
+                (Enterprise Resource Planning) system for small-scale vendors of the unorganised sector. We aim to digitise their 
+                inventory management system using Image Recognition Software. Moreover, our machine learning model makes use of the vendor's target profit to provide dynamic
+                 pricing recommendations.<br/><br/> As the Project Lead and CTO, I am developing the image recognition algorithm alongwith
+                creating the web and mobile application.</p>
+                <h4 style="margin-bottom: 10px">Currently, Prosper.ai is in the finals of the compeition which will be held in October 2020</h4>
+              <a href="https://drive.google.com/file/d/1l3yW7pSDkBcfLtVG_FesRTjgSONqNPun/view?usp=sharing">Sample</a>
+            </div>
+            <div class="project-image">
+              <img src="{{url_for('static', filename='images/design.png')}}">
+            </div>
+          </div>
+          <!-- CARD #2 -->
+          <div class="project-card" id='trade'>
+            <div class="project-content">
+              <h3>Trading Application</h3>
+              <p>A dummy trading web application based on the US stock market</p>
+              <ul>
+                <li>A MERN stack implementation. Used Restful API to enable fast communication between the client and
+                  the server.</li>
+                <li>Used Plotly.js for graphing the stock information of a 100 day period</li>
+                <li>Used AlphaVantage Stock API for accessing US stock market.</li>
+              </ul>
+              <a style="text-decoration: none; color: #124e8c" href="https://github.com/agarsid/Trading-Application">GitHub Link</a>
+            </div>
+            <div class="project-image">
+              <img async src="{{url_for('static', filename='images/Mern.jpg')}}">
+            </div>
+          </div>
+          <!-- CARD #3 -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Tic-Tac-Toe</h3>
+              <p>A GUI and network facilitated Tic-Tac-Toe Game in Java.</p>
+              <ul>
+                <li>Used Object Oriented Programming alongwith formatting the code based on the Model-View-Controller
+                  framework. </li>
+                <li>Implemented a server-client model and used multi-threading.</li>
+              </ul>
+              <a style="text-decoration: none; color: #124e8c" href="https://github.com/agarsid/Tic-Tac-Toe">GitHub Link</a>
+            </div>
+            <div class="project-image">
+              <img src="{{url_for('static', filename='images/java.png')}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END PROJECTS -->
+
+    <!-- BEGIN SKILLS -->
+    <div class="row black box-shadow" id='skills'>
+      <div class="main-content">
+        <div class="content-header">
+          <h2>Skills</h2>
+        </div>
+        <div class="content-body">
+
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title" style="background: #d35400;"><span>Javascript</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>React</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title" style="background: #2c3e50;"><span>Databases</span></div>
+            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title" style="background: #46465e;"><span>Cloud Services</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">50%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #333333;"><span>Python</span></div>
+            <div class="skillbar-bar" style="background: #525252;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>NodeJs & Express</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>Java</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div> <!-- End Skill Bar -->
+        </div>
+      </div>
+    </div>
+
+    <!-- END SKILLS -->
+
+    <!-- BEGIN CONTACT -->
+
+    <div class="row" id='contact'>
+      <div class="main-content">
+        <div class="content-header">
+          <!-- <a class="anchor" name="contact"></a> -->
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact content-body" style="max-width: 800px">
+          <p class="black-text">
+            Reach me at <a class="black-text" style="text-decoration: none"
+              href='mailto:agarsid@connect.hku.hk'>agarsid@hku.hk</a>
+          </p>
+          <form method="POST" action="https://formspree.io/xgenronk" target='_blank'>
+            <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <input type="email" name="_replyto" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="row black">
+      <div class="main-content" style="padding: 1rem;">
+        <div class="content-header">
+        </div>
+        <div class="content-body white-text">
+          <p>Copyright Siddharth Agarwal 2020</p>
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 750,
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script>
+    const cont = { reset: true };
+    const duration1 = { duration: 800, delay: 400, origin: 'right' };
+    const duration2 = { duration: 800, delay: 400, origin: 'left' }
+    ScrollReveal({ distance: '100px' })
+
+    ScrollReveal().reveal('.content-body', duration1);
+    ScrollReveal().reveal('.aboutImg', duration2);
+    ScrollReveal().reveal('.card', duration2);
+    ScrollReveal().reveal('.project-card', duration1);
+    ScrollReveal().reveal('.contact', cont);
+    ScrollReveal().reveal('.skillbar clearfix ', cont);
+    ScrollReveal().reveal('.timeline__group ', duration2);
+    ScrollReveal().reveal('.timeline__box ', duration1);
+
+
+  </script>
+  <script>
+
+    new TypeIt("#intro", {
+      lifeLike: true,
+      waitUntilVisible: true,
+      cursor: false
+    })
+      .type('Computer Science Junior', { delay: 200 })
+      .delete(6)
+      .type('third year', { delay: 200 })
+      .delete(10)
+      .type('Penultimate', { delay: 200 })
+      .delete(11)
+      .type('Junior at The University of Hong Kong')
+      .pause(300)
+      // .delete(2)
+      // .type('sterday use up to muc')
+      // .move(-4)
+      // .type('o')
+      // .move('END')
+      // .type('h of today.')
+      // .pause(500)
+      // .break({delay: 500})
+      // .break({delay: 500})
+      // .type('<em>- Will Rogers</em>')
+      .go();
+
+    setTimeout(() => {
+      new TypeIt("#intro_2", {
+        lifeLike: true,
+        waitUntilVisible: true,
+        cursor: false
+      })
+        .break({ delay: 500 })
+        .break({ delay: 500 })
+        .type('I am not a')
+        .move(-2)
+        .delete(4)
+        .move('END')
+        .type(' Software Developer', { delay: 200 })
+        .delete(18)
+        .type('Hustler', { delay: 500 })
+        .delete(7)
+        .type('Debator', { delay: 500 })
+        .delete(7)
+        .type('Problem Solver!', { delay: 500 })
+        .go()
+    }, 7000);
+
+    jQuery(document).ready(function () {
+      jQuery('.skillbar').each(function () {
+        jQuery(this).find('.skillbar-bar').animate({
+          width: jQuery(this).attr('data-percent')
+        }, 6000);
+      });
+    });
+  </script>
+</body>
+
 </html>
